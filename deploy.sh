@@ -17,4 +17,4 @@ done
 ls
 
 # helm install
-sudo helm install --set name=tindog tindog ./tindog --namespace my-project
+sudo helm install --name tindog ./tindog --namespace my-project
