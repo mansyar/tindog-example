@@ -1,6 +1,6 @@
 #!/bin/bash
 # update tag
-VERSION=$(git rev-parse --short HEAD)
+export VERSION=$(git rev-parse --short HEAD)
 
 TAG=$VERSION docker compose build
 TAG=$VERSION docker compose push
