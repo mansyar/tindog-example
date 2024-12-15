@@ -15,4 +15,4 @@ for file in ./tindog/templates/*.yaml; do
 done
 
 # helm install
-helm install tindog ./tindog --namespace my-project
+sudo helm install tindog ./tindog --namespace my-project

@@ -71,7 +71,7 @@ ingress:
   tls: 
     - hosts:
       - tindog.ansyar-world.top
-      secretName: tindog-dashboard-ingress-tls
+      secretName: tindog-ingress-tls
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
