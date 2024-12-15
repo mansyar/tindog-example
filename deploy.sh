@@ -6,7 +6,7 @@ TAG=$VERSION docker compose build
 TAG=$VERSION docker compose push
 
 
-
+echo $VERSION
 TAG=$VERSION sed -i "s/\${TAG}/$TAG/g" ./tindog/values.yaml
 
 # helm install
