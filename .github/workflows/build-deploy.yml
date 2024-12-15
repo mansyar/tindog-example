@@ -19,7 +19,7 @@ jobs:
 
       # Step 2: Set up kubectl to access your Kubernetes cluster
       - name: Set up kubectl
-        uses: actions/setup-kubectl@v3
+        uses: actions/setup-kubectl@v2
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
 
