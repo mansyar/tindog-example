@@ -60,7 +60,7 @@ service:
 ingress:
   enabled: true
   className: ""
-  annotations: {}
+  annotations: 
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     cert-manager.io/cluster-issuer: lets-encrypt
   hosts:
@@ -68,10 +68,10 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-  tls: []
+  tls: 
     - hosts:
-      - kube.ansyar-world.top
-    secretName: kube-dashboard-ingress-tls
+      - tindog.ansyar-world.top
+      secretName: tindog-dashboard-ingress-tls
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
